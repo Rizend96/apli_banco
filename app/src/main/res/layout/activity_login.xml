@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/tvtitulo"
+        android:text="Iniciar Sesion"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imgLogin"
+        android:layout_below="@id/tvtitulo"
+        android:src="@drawable/ic_log_in"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Ingrese el Email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/imgLogin"
+        android:background="@drawable/fondo_inputs"
+        android:elevation="8dp"
+        android:layout_marginTop="50dp"
+        android:paddingHorizontal="5dp"
+        android:drawableStart="@drawable/ic_email_black"
+        android:drawablePadding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <EditText
+        android:id="@+id/etPass"
+        android:hint="Ingrese la contraseña"
+        android:inputType="textPassword"
+        android:layout_below="@id/etEmail"
+        android:background="@drawable/fondo_inputs"
+        android:elevation="8dp"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="5dp"
+        android:drawableStart="@drawable/ic_password_black"
+        android:drawablePadding="10dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:id="@+id/textos"
+        android:layout_marginVertical="20dp"
+        android:layout_below="@id/etPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/pregunta"
+            android:layout_below="@id/etPass"
+            android:text="¿No tienes cuenta?"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/respuesta"
+            android:layout_below="@id/etPass"
+            android:layout_toRightOf="@id/pregunta"
+            android:text="Registrarme"
+            android:textColor="#0066FF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnEntrar"
+        android:text="Entrar"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+
+</RelativeLayout>
